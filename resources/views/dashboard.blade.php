@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-layouts.app>
 
     {{-- TITLE --}}
     <x-slot name="title"> {{ __('Dashboard') }} </x-slot>
@@ -15,52 +15,45 @@
                     <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
                         <div class="statistics-item">
                             <p>
-                                <i class="icon-sm fas fa-chalkboard-teacher mr-2"></i>
-                                Docentes
-                                {{-- {{ now()->translatedFormat('l, d \d\e F \d\e Y') }} --}}
+                                <i class="icon-sm fas fa-chalkboard-teacher mr-2"></i>{{__('Docentes')}}
                             </p>
-                            <h2>56</h2>
-                            <label class="badge badge-outline-danger badge-pill"> Reduziu 30%</label>
+                            <h2>{{__('56')}}</h2>
+                            <label class="badge badge-outline-danger badge-pill">{{__('Reduziu 30%')}}</label>
                         </div>
                         <div class="statistics-item">
                             <p>
-                                <i class="icon-sm fas fa-users mr-2"></i>
-                                Administrativos
+                                <i class="icon-sm fas fa-users mr-2"></i>{{__('Administrativos')}}
                             </p>
-                            <h2>43</h2>
-                            <label class="badge badge-outline-success badge-pill">Aumentou 12%</label>
+                            <h2>{{__('43')}}</h2>
+                            <label class="badge badge-outline-success badge-pill">{{__('Aumentou 12%')}}</label>
                         </div>
                         <div class="statistics-item">
                             <p>
-                                <i class="icon-sm fa fa-chalkboard mr-2"></i>
-                                Turmas
+                                <i class="icon-sm fa fa-chalkboard mr-2"></i>{{__('Turmas')}}
                             </p>
-                            <h2>29</h2>
-                            <label class="badge badge-outline-success badge-pill"> Aumentou 2.7%</label>
+                            <h2>{{__('29')}}</h2>
+                            <label class="badge badge-outline-success badge-pill">{{__('Aumentou 2.7%')}}</label>
                         </div>
                         <div class="statistics-item">
                             <p>
-                                <i class="icon-sm fas fa-graduation-cap mr-2"></i>
-                                Matriculados
+                                <i class="icon-sm fas fa-graduation-cap mr-2"></i>{{__('Matriculados')}}
                             </p>
-                            <h2>1300</h2>
-                            <label class="badge badge-outline-success badge-pill">Aumentou 17%</label>
+                            <h2>{{__('1300')}}</h2>
+                            <label class="badge badge-outline-success badge-pill">{{__('Aumentou 17%')}}</label>
                         </div>
                         <div class="statistics-item">
                             <p>
-                                <i class="icon-sm fas fa-book-reader mr-2"></i>
-                                Avaliados
+                                <i class="icon-sm fas fa-book-reader mr-2"></i>{{__('Avaliados')}}
                             </p>
-                            <h2>123</h2>
-                            <label class="badge badge-outline-success badge-pill">Aumentou 10%</label>
+                            <h2>{{__('123')}}</h2>
+                            <label class="badge badge-outline-success badge-pill">{{__('Aumentou 10%')}}</label>
                         </div>
                         <div class="statistics-item">
                             <p>
-                                <i class="icon-sm fas fa-tasks mr-2"></i>
-                                Aprovados
+                                <i class="icon-sm fas fa-tasks mr-2"></i>{{__('Aprovados')}}
                             </p>
-                            <h2>898</h2>
-                            <label class="badge badge-outline-danger badge-pill">Reduziu 16%</label>
+                            <h2>{{__('898')}}</h2>
+                            <label class="badge badge-outline-danger badge-pill">{{__('Reduziu 16%')}}</label>
                         </div>
                     </div>
                 </div>
@@ -74,7 +67,7 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">
-                        <i class="fas fa-chart-line"></i>Ultimas Matrículas
+                        <i class="fas fa-chart-line"></i>{{__('Ultimas Matrículas')}}
                     </h4>
                     <canvas id="grafico-ultimas-matriculas"></canvas>
                     <div id="grafico-ultimas-matriculas-legend" class="grafico-ultimas-matriculas-legend"></div>                  
@@ -85,7 +78,7 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">
-                        <i class="fas fa-chart-line"></i>Ultimos Aproveitamentos 
+                        <i class="fas fa-chart-line"></i>{{__('Ultimos Aproveitamentos')}} 
                     </h4>
                     <canvas id="grafico-ultimos-aproveitamentos"></canvas>
                 </div>
@@ -99,7 +92,7 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">
-                        <i class="fas fa-chart-line"></i> Actual Matrícula
+                        <i class="fas fa-chart-line"></i> {{__('Actual Matrícula')}}
                     </h4>
                     <canvas id="grafico-matricula-actual"></canvas>                  
                 </div>
@@ -110,7 +103,7 @@
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">
-                        <i class="fas fa-chart-line"></i>Actual Aproveitamento 
+                        <i class="fas fa-chart-line"></i>{{__('Actual Aproveitamento')}} 
                     </h4>
                     <canvas id="grafico-aproveitamento-actual"></canvas>
                 </div>
@@ -121,7 +114,7 @@
 
     {{-- SCRIPTS --}}
     <x-slot name="scripts">
-        <script type="text/javascript" src="{{ asset('libraries/js/dashboard.js') }}" charset="UTF-8"></script>
+        <script type="text/javascript" src="{{ asset('theme/js/dashboard.js') }}" charset="UTF-8"></script>
     </x-slot>
-    
-</x-app-layout>
+
+</x-layouts.app>

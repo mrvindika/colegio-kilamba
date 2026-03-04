@@ -1,4 +1,4 @@
-<nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row default-layout-navbar">
+<nav class="navbar col-lg-12 col-12 p-0  @auth fixed-top @endauth d-flex flex-row default-layout-navbar">
 
     {{-- BRAND DESCRIPTION --}}
     <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
@@ -103,20 +103,22 @@
             </button>
         @else
             <ul class="navbar-nav navbar-nav-right">
-                @if(App\Models\User::all() && Route::currentRouteName()=="")
-                    <li class="nav-item btn btn-info"> 
-                        <a class="nav-link" href="{{ route('login') }}">
-                            <i class="fas fa-door-open"></i> {{ __('Login') }}
-                        </a>
-                    </li>
+                @if(Route::currentRouteName()=='welcome')
+                    @if(App\Models\User::count() == 0)
+                        <li class="nav-item btn btn-warning"> 
+                            <a class="nav-link" href="{{ route('register') }}">
+                                <i class="fas fa-plus"></i> {{__('Cadastrar')}}
+                            </a>
+                        </li>
+                        @else 
+                        <li class="nav-item btn btn-info"> 
+                            <a class="nav-link" href="{{ route('login') }}">
+                                <i class="fas fa-door-open"></i> {{ __('Login') }}
+                            </a>
+                        </li>
+                    @endif
                 @endif
-                @if(App\Models\User::all() === 0)
-                    <li class="nav-item btn btn-warning"> 
-                        <a class="nav-link" href="{{ route('register') }}">
-                            <i class="fas fa-plus"></i> {{__('Usuário')}}
-                        </a>
-                    </li>
-                @endif
+                
             </ul>
         @endauth
     </div>

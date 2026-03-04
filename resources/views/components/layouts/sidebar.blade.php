@@ -23,7 +23,7 @@
 
         {{-- SYSTEM  --}}
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#settings-menu" aria-expanded="false" aria-controls="settings-menu">
+            <a class="nav-link collapsed" data-toggle="collapse" href="#settings-menu" aria-expanded="false" aria-controls="settings-menu">
                 <i class="fas fa-cog menu-icon"></i>
                 <span class="menu-title">Definições</span>
                 <i class="menu-arrow"></i>
@@ -39,7 +39,7 @@
 
         {{-- SECURITY --}}
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#security-menu" aria-expanded="false" aria-controls="security-menu">
+            <a class="nav-link collapsed" data-toggle="collapse" href="#security-menu" aria-expanded="false" aria-controls="security-menu">
                 <i class="fas fa-user-lock menu-icon"></i>
                 <span class="menu-title">Segurança</span>
                 <i class="menu-arrow"></i>
@@ -56,7 +56,7 @@
 
         {{-- FUNCIONÁRIO --}}
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#funcionario-menu" aria-expanded="false" aria-controls="funcionario-menu">
+            <a class="nav-link collapsed" data-toggle="collapse" href="#funcionario-menu" aria-expanded="false" aria-controls="funcionario-menu">
                 <i class="fas fa-users menu-icon"></i>
                 <span class="menu-title">Funcionário</span>
                 <i class="menu-arrow"></i>
@@ -74,7 +74,7 @@
 
         {{-- ESTUDANTE --}}
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#estudante-menu" aria-expanded="false" aria-controls="estudante-menu">
+            <a class="nav-link collapsed" data-toggle="collapse" href="#estudante-menu" aria-expanded="false" aria-controls="estudante-menu">
                 <i class="fas fa-graduation-cap menu-icon"></i>
                 <span class="menu-title">Estudante</span>
                 <i class="menu-arrow"></i>
@@ -91,7 +91,7 @@
 
         {{-- TURMA --}}
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#turma-menu" aria-expanded="false" aria-controls="turma-menu">
+            <a class="nav-link collapsed" data-toggle="collapse" href="#turma-menu" aria-expanded="false" aria-controls="turma-menu">
                 <i class="fa fa-chalkboard menu-icon"></i>
                 <span class="menu-title">Turma</span>
                 <i class="menu-arrow"></i>
@@ -108,7 +108,7 @@
 
         {{-- ANO LECTIVO --}}
         <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ano-lectivo-menu" aria-expanded="false" aria-controls="ano-lectivo-menu">
+            <a class="nav-link collapsed" data-toggle="collapse" href="#ano-lectivo-menu" aria-expanded="false" aria-controls="ano-lectivo-menu">
                 <i class="fas fa-calendar-alt menu-icon"></i>
                 <span class="menu-title">Ano Lectivo</span>
                 <i class="menu-arrow"></i>
