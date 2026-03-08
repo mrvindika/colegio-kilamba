@@ -8719,7 +8719,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
   color: #000000;
   text-align: left;
@@ -9086,7 +9086,7 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 mark,
@@ -10408,14 +10408,14 @@ select.tt-hint:focus::-ms-value {
 .col-form-label-lg {
   padding-top: calc(0.94rem + 1px);
   padding-bottom: calc(0.94rem + 1px);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.5;
 }
 
 .col-form-label-sm {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -10484,7 +10484,7 @@ select.tt-hint:focus::-ms-value {
 .input-group-sm > .input-group-append > .swal2-styled, .wizard > .actions
 .input-group-sm > .input-group-append > a {
   padding: 0.5rem 0.81rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -10521,7 +10521,7 @@ select.tt-hint:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > .swal2-styled, .wizard > .actions
 .input-group-lg > .input-group-append > a {
   padding: 0.94rem 1.94rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -10564,13 +10564,15 @@ select.tt-hint:not([size]):not([multiple]),
 }
 
 .form-check {
-	display: flex;
-	padding-left: 0;
+  position: relative;
+  display: block;
+  padding-left: 1.25rem;
 }
 
 .form-check-input {
   position: absolute;
   margin-top: 0.3rem;
+  margin-left: -1.25rem;
 }
 
 .form-check-input:disabled ~ .form-check-label {
@@ -10953,7 +10955,7 @@ select.tt-hint:not([size]):not([multiple]),
 
 .btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel, .wizard > .actions a {
   display: inline-block;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -11617,7 +11619,7 @@ fieldset:disabled a {
 }
 
 .btn-link {
-  font-weight: 600;
+  font-weight: 400;
   color: #007bff;
   background-color: transparent;
 }
@@ -11860,7 +11862,7 @@ input[type="button"].btn-block {
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
-  font-weight: 600;
+  font-weight: 400;
   color: #000000;
   text-align: inherit;
   white-space: nowrap;
@@ -12784,7 +12786,7 @@ input[type="button"].btn-block {
   padding: 0.875rem 1.375rem;
   margin-bottom: 0;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1;
   color: #495057;
   text-align: center;
@@ -13663,6 +13665,10 @@ input[type="button"].btn-block {
   padding: 1.25rem;
 }
 
+.card-title {
+  margin-bottom: 0.75rem;
+}
+
 .card-subtitle {
   margin-top: -0.375rem;
   margin-bottom: 0;
@@ -13681,9 +13687,9 @@ input[type="button"].btn-block {
 }
 
 .card-header {
-  padding: 0.75rem;
+  padding: 0.75rem 1.25rem;
   margin-bottom: 0;
-  background: linear-gradient(85deg, #392C70, #6a005b);
+  background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid #e0e0ef;
 }
 
@@ -14750,7 +14756,7 @@ button.close {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -14863,7 +14869,7 @@ button.close {
   max-width: 276px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -15515,7 +15521,7 @@ button.bg-dark:focus,
   display: table-cell !important;
 }
 
-.d-flex, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item, .navbar.default-layout-navbar .navbar-menu-wrapper .navbar-nav, .navbar.default-layout-navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile, .navbar.horizontal-layout-navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link, .page-header, .loader-demo-box, .grafico-ultimas-matriculas-legend ul, .list-wrapper ul li, .email-wrapper .mail-sidebar .menu-bar .profile-list-item a, .email-wrapper .mail-sidebar .menu-bar .profile-list-item a .user, .email-wrapper .mail-list-container .mail-list .details, .email-wrapper .message-body .attachments-sections ul li .thumb, .email-wrapper .message-body .attachments-sections ul li .details .buttons, .lightGallery .image-tile .demo-gallery-poster, .swal2-modal {
+.d-flex, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item, .navbar.default-layout-navbar .navbar-menu-wrapper .navbar-nav, .navbar.default-layout-navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile, .navbar.horizontal-layout-navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link, .page-header, .loader-demo-box, .orders-chart-legend ul, .sales-status-chart-legend ul li, .list-wrapper ul li, .email-wrapper .mail-sidebar .menu-bar .profile-list-item a, .email-wrapper .mail-sidebar .menu-bar .profile-list-item a .user, .email-wrapper .mail-list-container .mail-list .details, .email-wrapper .message-body .attachments-sections ul li .thumb, .email-wrapper .message-body .attachments-sections ul li .details .buttons, .lightGallery .image-tile .demo-gallery-poster, .swal2-modal {
   display: flex !important;
 }
 
@@ -15772,7 +15778,7 @@ button.bg-dark:focus,
   justify-content: flex-end !important;
 }
 
-.justify-content-center, .grafico-ultimas-matriculas-legend ul, .email-wrapper .message-body .attachments-sections ul li .thumb {
+.justify-content-center, .orders-chart-legend ul, .email-wrapper .message-body .attachments-sections ul li .thumb {
   justify-content: center !important;
 }
 
@@ -15792,7 +15798,7 @@ button.bg-dark:focus,
   align-items: flex-end !important;
 }
 
-.align-items-center, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item, .navbar.default-layout-navbar .navbar-menu-wrapper .navbar-nav, .navbar.default-layout-navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile, .navbar.horizontal-layout-navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link, .page-header, .loader-demo-box, .email-wrapper .message-body .attachments-sections ul li .thumb, .email-wrapper .message-body .attachments-sections ul li .details .buttons {
+.align-items-center, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item, .navbar.default-layout-navbar .navbar-menu-wrapper .navbar-nav, .navbar.default-layout-navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile, .navbar.horizontal-layout-navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link, .page-header, .loader-demo-box, .sales-status-chart-legend ul li, .list-wrapper ul li, .email-wrapper .message-body .attachments-sections ul li .thumb, .email-wrapper .message-body .attachments-sections ul li .details .buttons {
   align-items: center !important;
 }
 
@@ -16358,9 +16364,6 @@ button.bg-dark:focus,
   right: 0;
   left: 0;
   z-index: 1030;
-}
-#guest .fixed-top {
-  position: static;
 }
 
 .fixed-bottom {
@@ -18399,14 +18402,14 @@ input:focus {
   font-family: 'PTsans';
   src: url("../fonts/PT_Sans/PTSans-Regular.eot");
   src: url("../fonts/PT_Sans/PTSans-Regulard41d.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans/PTSans-Regular.woff2") format("woff2"), url("../fonts/PT_Sans/PTSans-Regular.woff") format("woff"), url("../fonts/PT_Sans/PTSans-Regular.ttf") format("truetype");
-  font-weight: 600;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PTsans';
   src: url("../fonts/PT_Sans/PTSans-Bold.eot");
-  src: url("../fonts/PT_Sans/PTSans-Boldd41d.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans/PTSans-Bold.html") format("woff2"), url("../fonts/PT_Sans/PTSans-Bold.woff") format("woff"), url("../fonts/PT_Sans/PTSans-Bold.ttf") format("truetype");
+  src: url("../fonts/PT_Sans/PTSans-Boldd41d.eot?#iefix") format("embedded-opentype"), url("../fonts/PT_Sans/PTSans-Bold.woff") format("woff2"), url("../fonts/PT_Sans/PTSans-Bold.woff") format("woff"), url("../fonts/PT_Sans/PTSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -18416,7 +18419,7 @@ input:focus {
   min-height: calc(100vh - 70px);
   background: #ffffff;
   font-family: "PTSans", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   padding: 0;
   width: 255px;
   z-index: 11;
@@ -18508,7 +18511,7 @@ input:focus {
   font-size: 0.875rem;
   line-height: 1;
   vertical-align: middle;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .sidebar .nav .nav-item .nav-link .badge {
@@ -18573,7 +18576,7 @@ input:focus {
 .sidebar .nav .nav-item.nav-profile .profile-name .name,
 .sidebar .nav .nav-item.nav-profile .profile-name .designation {
   font-family: "PTSans", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0;
   line-height: 1.5;
 }
@@ -18624,7 +18627,7 @@ input:focus {
   color: #999999;
   padding: 0.75rem 1rem;
   position: relative;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   line-height: 1;
   height: auto;
   border-top: 0;
@@ -18865,7 +18868,7 @@ input:focus {
 }
 
 .navbar.default-layout-navbar {
-  font-weight: 600;
+  font-weight: 400;
   transition: background 0.25s ease;
   -webkit-transition: background 0.25s ease;
   -moz-transition: background 0.25s ease;
@@ -18970,7 +18973,7 @@ input:focus {
 .navbar.default-layout-navbar .navbar-menu-wrapper .navbar-nav .nav-item .nav-link {
   color: inherit;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -19444,7 +19447,7 @@ input:focus {
   -webkit-align-items: stretch;
   align-items: stretch;
   padding: 0 2rem;
-  background: linear-gradient(85deg, #392C70, #6a005b);
+  background: linear-gradient(85deg, #392c70, #6a005b);
 }
 
 .navbar.horizontal-layout-navbar .navbar-brand-wrapper .navbar-brand img {
@@ -19632,11 +19635,11 @@ h5,
 
 h6,
 .h6 {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.8125rem;
 }
 
 h1,
@@ -19824,6 +19827,13 @@ html {
   padding-left: 0;
   padding-right: 0;
 }
+#guest-page .page-body-wrapper{
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 0;
+
+}
+
 
 .page-body-wrapper.full-page-wrapper {
   width: 100%;
@@ -19870,12 +19880,12 @@ code {
   color: #FF5E6D;
   font-family: "PTSans", sans-serif;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   border-radius: 4px;
 }
 
 .page-header {
-  margin: 5em 0 2em;
+  margin: 0 0 1.5rem 0;
 }
 
 .page-header .breadcrumb {
@@ -19884,7 +19894,7 @@ code {
 }
 
 .page-title {
-  color: #393939;
+  color: #000000;
   font-size: 1.5rem;
   margin-bottom: 0;
 }
@@ -19905,17 +19915,21 @@ code {
 
 /* Footer */
 .footer {
-  background-color: #f2f2f2;
+  background: #f2f2f2;
+  padding: 30px 1rem;
   transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   -webkit-transition: all 0.25s ease;
   -ms-transition: all 0.25s ease;
+  font-size: calc(0.8125rem - 0.05rem);
   font-family: "PTSans", sans-serif;
+  font-weight: 400;
   border-top: 1px solid #e0e0ef;
 }
 
-.footer > .d-sm-flex{
-  padding: 1rem;
+.footer a {
+  color: #04B76B;
+  font-size: inherit;
 }
 
 @media (max-width: 991px) {
@@ -19926,7 +19940,7 @@ code {
 }
 
 /* Layouts */
-#auth .default-layout-navbar + .page-body-wrapper {
+.default-layout-navbar + .page-body-wrapper {
   padding-top: 70px;
 }
 
@@ -20083,7 +20097,7 @@ code {
     display: flex;
     -webkit-align-items: center;
     align-items: center;
-    background: linear-gradient(85deg, #392C70, #6a005b);
+    background: linear-gradient(85deg, #392c70, #6a005b);
     color: #ffffff;
     padding: 0.5rem 1.4rem;
     left: 70px;
@@ -20097,7 +20111,7 @@ code {
     box-shadow: 4px 0px 7px 0px rgba(182, 185, 189, 0.25);
   }
   .sidebar-dark.sidebar-icon-only .sidebar .nav .nav-item.hover-open .nav-link .menu-title {
-    background: linear-gradient(85deg, #392C70, #6a005b);
+    background: linear-gradient(85deg, #392c70, #6a005b);
   }
   .rtl.sidebar-icon-only .sidebar .nav .nav-item.hover-open .nav-link .menu-title {
     left: auto;
@@ -20112,17 +20126,17 @@ code {
     display: none;
   }
   .sidebar-icon-only .sidebar .nav .nav-item.hover-open .nav-link:hover .menu-title {
-    background: linear-gradient(85deg, #392C70, #6a005b);
+    background: linear-gradient(85deg, #392c70, #6a005b);
     color: #ffffff;
   }
   .sidebar-dark.sidebar-icon-only .sidebar .nav .nav-item.hover-open .nav-link:hover .menu-title {
-    background: linear-gradient(85deg, #392C70, #6a005b);
+    background: linear-gradient(85deg, #392c70, #6a005b);
   }
   .sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapse,
   .sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapsing {
     display: block;
     padding: .5rem 0;
-    background: linear-gradient(85deg, #392C70, #6a005b);
+    background: linear-gradient(85deg, #392c70, #6a005b);
     color: #ffffff;
     border-radius: 0 0 5px 0;
     position: absolute;
@@ -20131,7 +20145,7 @@ code {
     box-shadow: 4px 4px 7px 0px rgba(182, 185, 189, 0.25);
   }
   .sidebar-dark.sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapse, .sidebar-dark.sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapsing {
-    background: linear-gradient(85deg, #392C70, #6a005b);
+    background: linear-gradient(85deg, #392c70, #6a005b);
   }
   .rtl.sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapse, .rtl.sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapsing {
     left: auto;
@@ -20535,7 +20549,7 @@ code {
   }
 }
 
-.grafico-ultimas-matriculas-legend ul {
+.orders-chart-legend ul {
   list-style-type: none;
   margin-bottom: 0;
   padding-left: 0;
@@ -20544,16 +20558,57 @@ code {
   border-top: 1px solid #e0e0ef;
 }
 
-.grafico-ultimas-matriculas-legend ul li:first-child {
+.orders-chart-legend ul li:first-child {
   margin-right: 2rem;
 }
 
-.grafico-ultimas-matriculas-legend ul li .legend-label {
+.orders-chart-legend ul li .legend-label {
   width: 10px;
   height: 10px;
   border-radius: 100%;
   margin-right: 10px;
   display: inline-block;
+}
+
+.sales-status-chart-legend ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.sales-status-chart-legend ul li {
+  margin-bottom: .5rem;
+}
+
+.sales-status-chart-legend ul li .legend-label {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.sales-status-chart-legend ul li .legend-percentage {
+  margin-bottom: 0;
+}
+
+.daily-sales-chart-legend ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.daily-sales-chart-legend ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.daily-sales-chart-legend ul li .legend-label {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 2px;
 }
 
 .vector-map {
@@ -20625,7 +20680,7 @@ code {
 }
 
 .accordion .card .card-header * {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1rem;
 }
 
@@ -20668,7 +20723,7 @@ code {
 .accordion .card .card-body {
   font-size: 14px;
   padding: 0 2rem 2rem 2rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
 }
 
@@ -20839,8 +20894,8 @@ code {
 /* Badges */
 .badge {
   border-radius: .125rem;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.8125rem;
+  font-weight: 400;
   line-height: 1;
   padding: .5rem .75rem;
 }
@@ -20937,7 +20992,7 @@ code {
 
 /* Bootstrap Alerts */
 .alert {
-  font-size: 1rem;
+  font-size: 0.8125rem;
 }
 
 .alert i {
@@ -21201,7 +21256,7 @@ code {
 .btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel, .wizard > .actions a {
   font-size: 1rem;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 400;
   /* Buttons with only icons */
   /* Buttons with icon and text */
 }
@@ -21983,7 +22038,7 @@ code {
 }
 
 .breadcrumb .breadcrumb-item {
-  font-size: 1rem;
+  font-size: 0.8125rem;
 }
 
 .breadcrumb.breadcrumb-custom {
@@ -21992,7 +22047,7 @@ code {
 }
 
 .breadcrumb.breadcrumb-custom .breadcrumb-item {
-  font-size: 1rem;
+  font-size: 0.8125rem;
   background: #dbe3e6;
   padding: 0.56rem 10px;
   color: #000;
@@ -22414,15 +22469,11 @@ code {
 }
 
 .card .card-title {
-  color: #393939;
+  color: #000000;
   font-weight: normal;
+  margin-bottom: 1.25rem;
   text-transform: capitalize;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.card-header >.card-title{
-  color: #f6f4f4;
+  font-size: 1.125rem;
 }
 
 .card .card-title > i {
@@ -22431,14 +22482,14 @@ code {
 }
 
 .card .card-subtitle {
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 0.625rem;
   margin-bottom: 0.625rem;
 }
 
 .card .card-description {
   margin-bottom: 1.5rem;
-  font-weight: 600;
+  font-weight: 400;
   color: #76838f;
 }
 
@@ -22500,7 +22551,7 @@ code {
 }
 
 .card.card-statistics {
-  background: linear-gradient(85deg, #392C70, #6a005b);
+  background: linear-gradient(85deg, #392c70, #6a005b);
   color: #ffffff;
 }
 
@@ -22603,7 +22654,7 @@ code {
   min-height: 18px;
   display: block;
   margin-left: 1.75rem;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   line-height: 1.5;
 }
 
@@ -22829,7 +22880,7 @@ code {
 /* Dropdowns */
 .dropdown .dropdown-menu {
   margin-top: .75rem;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   box-shadow: 0px 1px 15px 1px rgba(230, 234, 236, 0.35);
 }
 
@@ -22894,8 +22945,8 @@ code {
 .tt-query,
 .tt-hint {
   border: 1px solid #e0e0ef;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 0.8125rem;
 }
 
 .form-control:-ms-input-placeholder, .asColorPicker-input:-ms-input-placeholder, .dataTables_wrapper select:-ms-input-placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:-ms-input-placeholder,
@@ -22903,7 +22954,7 @@ code {
 .tt-query:-ms-input-placeholder,
 .tt-hint:-ms-input-placeholder {
   color: #686868;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .form-control:-moz-placeholder, .asColorPicker-input:-moz-placeholder, .dataTables_wrapper select:-moz-placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:-moz-placeholder,
@@ -22911,7 +22962,7 @@ code {
 .tt-query:-moz-placeholder,
 .tt-hint:-moz-placeholder {
   color: #686868;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .form-control::-moz-placeholder, .asColorPicker-input::-moz-placeholder, .dataTables_wrapper select::-moz-placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]::-moz-placeholder,
@@ -22919,7 +22970,7 @@ code {
 .tt-query::-moz-placeholder,
 .tt-hint::-moz-placeholder {
   color: #686868;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .form-control::-webkit-input-placeholder, .asColorPicker-input::-webkit-input-placeholder, .dataTables_wrapper select::-webkit-input-placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]::-webkit-input-placeholder,
@@ -22927,7 +22978,7 @@ code {
 .tt-query::-webkit-input-placeholder,
 .tt-hint::-webkit-input-placeholder {
   color: #686868;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .form-control:focus, .asColorPicker-input:focus, .dataTables_wrapper select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text]:focus,
@@ -23009,7 +23060,7 @@ select.border-dark.tt-hint {
 }
 
 .form-group label {
-  font-size: 1rem;
+  font-size: 0.8125rem;
   line-height: 1;
   vertical-align: top;
   margin-bottom: .5rem;
@@ -23072,8 +23123,8 @@ select.border-dark.tt-hint {
   -webkit-align-items: center;
   align-items: center;
   padding: 15px 15px;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 0.8125rem;
 }
 
 .icons-list > div i {
@@ -23825,7 +23876,7 @@ ul,
 ol,
 dl {
   padding-left: 1rem;
-  font-size: 1rem;
+  font-size: 0.8125rem;
 }
 
 ul li,
@@ -24012,7 +24063,7 @@ dl li {
 
 .modal .modal-dialog .modal-content .modal-header .close span {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
   color: #6a6a6a;
 }
 
@@ -24878,7 +24929,7 @@ dl li {
 }
 
 .table td, .jsgrid .jsgrid-table td {
-  font-size: 1rem;
+  font-size: 0.8125rem;
 }
 
 .table td img, .jsgrid .jsgrid-table td img {
@@ -25395,7 +25446,7 @@ dl li {
 }
 
 .tooltip .tooltip-inner {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .tooltip-primary .tooltip-inner {
@@ -25596,8 +25647,8 @@ dl li {
 .pricing-table .pricing-card .pricing-card-body .plan-features li {
   text-align: left;
   padding: 4px 0px;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 0.8125rem;
 }
 
 /* Settings Panel */
@@ -25679,7 +25730,7 @@ dl li {
 
 .settings-panel .settings-heading {
   padding: 16px 0 13px 35px;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   font-family: "PTSans", sans-serif;
   font-weight: 500;
   line-height: 1;
@@ -25705,7 +25756,7 @@ dl li {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   line-height: 1;
   color: #595959;
   background: #ffffff;
@@ -25877,7 +25928,7 @@ dl li {
 
 .settings-panel .events p {
   font-family: "PTSans", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .rtl .settings-panel .events p {
@@ -26039,13 +26090,13 @@ dl li {
 
 .email-wrapper .mail-sidebar .menu-bar .menu-items li a {
   color: #303a40;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   text-decoration: none;
 }
 
 .email-wrapper .mail-sidebar .menu-bar .menu-items li a i {
   margin-right: 8px;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   line-height: 1.5;
 }
 
@@ -26067,7 +26118,7 @@ dl li {
 }
 
 .email-wrapper .mail-sidebar .menu-bar .online-status .chat {
-  font-size: 1rem;
+  font-size: 0.8125rem;
   color: #392C70;
   margin-bottom: 0;
   font-weight: 600;
@@ -26145,8 +26196,8 @@ dl li {
 
 .email-wrapper .mail-sidebar .menu-bar .profile-list-item a .user .u-name {
   margin: 0;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: 0.8125rem;
   line-height: 1;
   color: #000000;
 }
@@ -26198,8 +26249,8 @@ dl li {
 
 .email-wrapper .mail-list-container .mail-list .content .sender-name {
   margin-bottom: 0;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.8125rem;
+  font-weight: 400;
   max-width: 95%;
 }
 
@@ -26257,7 +26308,7 @@ dl li {
 
 .email-wrapper .message-body .sender-details .details .sender-email {
   margin-bottom: 20px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .email-wrapper .message-body .sender-details .details .sender-email i {
@@ -26325,7 +26376,7 @@ dl li {
 }
 
 .ace_editor .ace_content {
-  font-size: 1rem;
+  font-size: 0.8125rem;
 }
 
 /* Avgrund Popup */
@@ -26340,8 +26391,8 @@ dl li {
   top: 50%;
   left: 50%;
   z-index: 1000;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.8125rem;
+  font-weight: 400;
   font-weight: initial;
   line-height: 1.85;
   border-radius: 10px;
@@ -26353,8 +26404,8 @@ dl li {
 }
 
 .avgrund-popin p {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.8125rem;
+  font-weight: 400;
   font-weight: initial;
 }
 
@@ -26579,7 +26630,7 @@ body.avgrund-active {
 
 /* CodeMirror */
 .CodeMirror {
-  font-size: 1rem;
+  font-size: 0.8125rem;
   height: auto;
   text-align: left;
   min-height: auto;
@@ -26786,7 +26837,7 @@ body.avgrund-active {
 }
 
 .dataTables_wrapper .dataTables_info {
-  font-size: 1rem;
+  font-size: 0.8125rem;
 }
 
 /* Datepicker */
@@ -27274,7 +27325,7 @@ body.avgrund-active {
 .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner .dropify-filename {
   color: #392C70;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .dropify-wrapper .dropify-preview .dropify-infos .dropify-infos-inner .dropify-infos-message {
@@ -27336,7 +27387,7 @@ body.avgrund-active {
   height: auto;
   background-image: none;
   text-shadow: none;
-  font-weight: 600;
+  font-weight: 400;
   background-color: #ffffff;
   border-color: #e0e0ef;
   text-transform: capitalize;
@@ -27691,7 +27742,7 @@ body.avgrund-active {
   border-radius: 4px;
   border: none;
   line-height: 1;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   padding: 13px 12px;
   bottom: 190%;
 }
@@ -28086,7 +28137,7 @@ body.avgrund-active {
 .br-theme-bars-1to10 .br-widget .br-current-rating,
 .br-theme-bars-horizontal .br-widget .br-current-rating {
   color: #000000;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   font-weight: initial;
 }
 
@@ -28247,7 +28298,7 @@ body.avgrund-active {
 }
 
 .swal2-modal .swal2-content {
-  font-size: 1rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   color: #000000;
   font-weight: initial;
@@ -28630,7 +28681,7 @@ div.tagsinput span.tag a {
 }
 
 .wizard > .steps .number {
-  font-size: 1rem;
+  font-size: 0.8125rem;
 }
 
 .wizard > .steps > ul > li {
@@ -28654,7 +28705,7 @@ div.tagsinput span.tag a {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 0.8125rem;
   font-weight: 600;
 }
 
@@ -29165,7 +29216,7 @@ div.tagsinput span.tag a {
 }
 
 .auth form .auth-link {
-  font-size: 1rem;
+  font-size: 0.8125rem;
 }
 
 .auth form .auth-link:hover {
@@ -29244,7 +29295,7 @@ div.tagsinput span.tag a {
 
 .profile-page .profile-header .details .detail-col p {
   margin-bottom: 0;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .profile-page .profile-header .details .detail-col p:first-child {
@@ -29325,5 +29376,3 @@ div.tagsinput span.tag a {
   font-size: 43px;
   margin-right: 0;
 }
-
-/*# sourceMappingURL=maps/style.css.map */

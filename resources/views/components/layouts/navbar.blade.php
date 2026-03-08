@@ -118,7 +118,14 @@
                         </li>
                     @endif
                 @endif
-                
+
+                @if(Route::currentRouteName()=='login')
+                     <li class="nav-item btn btn-info"> 
+                        <a class="nav-link" href="{{ route('welcome') }}">
+                            <i class="fas fa-info"></i> {{__('Bem-vindo')}}
+                        </a>
+                    </li>
+                @endif
             </ul>
         @endauth
     </div>

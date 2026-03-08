@@ -16,63 +16,69 @@
         {{-- ICON --}}
         <link rel="shortcut icon" href="{{ asset('images/favicon.ico') }}" type="image/png">
 
-        {{-- GENERAL STYLES --}}
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-        @livewireStyles
-        <link rel="stylesheet" type="text/css" href="{{ asset('theme/iconfonts/font-awesome/css/all.min.css') }}">
+        {{-- GENERIC STYLES --}}
         <link rel="stylesheet" type="text/css" href="{{ asset('theme/css/vendor.bundle.base.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('theme/css/vendor.bundle.addons.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('theme/iconfonts/font-awesome/css/all.min.css') }}">
+
+        {{-- LIVEWIRE AND VITE STYLES --}}
+        @livewireStyles
+        @vite(['resources/css/app.css'])
+
+        {{-- THEME STYLE --}}
         <link rel="stylesheet" type="text/css" href="{{ asset('theme/css/style.css') }}">
 
         {{-- SPECIFIC STYLES --}}
         {{ $styles?? null }}
     </head>
-    <body id="{{ Auth::user()? 'auth-page': 'guest-page'}}">
+    <body id="{{ Auth::user()? 'app-page': 'guest-page' }}">
+        
         {{-- CONTENT PAGE --}}
         <div class="container-scroller">                                                                                                                                                                                                                
             {{-- NAVBAR --}}
             <x-layouts.navbar> </x-layouts.navbar>
 
             <div class="container-fluid page-body-wrapper">
-                {{-- MAIN CONTENT --}}
+                {{-- SIDEBAR --}}
                 @auth
-                    {{-- SIDEBAR --}}
-                   <x-layouts.sidebar> </x-layouts.sidebar>
-
-                    <div class="main-panel">
-                        <div class="content-wrapper">
-                            <div class="page-header">
-                                <h3 class="page-title">
-                                    <i class="fa fa-home"></i> 
-                                    {{ $header }}
-                                </h3>
-                            </div>
-                            {{ $slot }}
-                        </div>
-
-                        {{-- FOOTER --}}
-                        <x-layouts.footer> </x-layouts.footer>
-                    </div>
-
-                    @else
-                        <div class="content-wrapper">
-                            <div class="row justify-content-center">
-                                {{ $slot }}
-                            </div>
-                        </div>  
+                    <x-layouts.sidebar> </x-layouts.sidebar>
                 @endauth
-            </div>
+                {{-- MAIN CONTENT --}}
+                <div class="main-panel">
+                    <div class="content-wrapper">
+                        @auth  
+                        <div class="page-header">
+                            <h3 class="page-title">
+                                <i class="fa fa-home"></i> 
+                                {{ $header?? null }}
+                            </h3>
+                        </div>
+                        {{ $slot }}
+                        @else
+                        {{ $slot }}
+                        @endauth
+                    </div>
+                </div> 
+            </div> 
         </div>
 
-        {{-- GENERAL SCRIPTS --}}
-        @livewireScripts
+        {{-- FOOTER --}}
+        <x-layouts.footer> </x-layouts.footer>
+        
+
+        {{-- GENERIC SCRIPTS --}}
         <script type="text/javascript" src="{{ asset('theme/js/vendor.bundle.base.js') }}" charset="UTF-8"></script>
         <script type="text/javascript" src="{{ asset('theme/js/vendor.bundle.addons.js') }}" charset="UTF-8"></script>
-
+        @auth
         <script type="text/javascript" src="{{ asset('theme/js/off-canvas.js') }}" charset="UTF-8"></script>
         <script type="text/javascript" src="{{ asset('theme/js/hoverable-collapse.js') }}" charset="UTF-8"></script>  
-        <script type="text/javascript" src="{{ asset('theme/js/misc.js') }}" charset="UTF-8"></script>
- 
+        <script type="text/javascript" src="{{ asset('theme/js/misc.js') }}" charset="UTF-8"></script> 
+        @endauth
+
+        {{-- LIVEWIRE AND VITE SCRIPTS --}}
+        @vite(['resources/js/app.js'])
+        @livewireScripts
+
         {{-- SPECIFIC SCRIPTS --}}
         {{ $scripts?? null }}
     </body>
