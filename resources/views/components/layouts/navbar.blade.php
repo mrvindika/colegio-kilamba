@@ -16,70 +16,13 @@
             </button>
 
             <ul class="navbar-nav navbar-nav-right">
-                {{-- NOTIFICATIONS INDICATOR --}}
-                <li class="nav-item dropdown">
-                    <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
-                    <i class="fas fa-bell mx-0"></i>
-                    <span class="count">4</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-                    <a class="dropdown-item">
-                        <p class="mb-0 font-weight-normal float-left">Tens 4 notificatições
-                        </p>
-                        <span class="badge badge-pill badge-warning float-right">Ver todos</span>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item preview-item">
-                        <div class="preview-thumbnail">
-                        <div class="preview-icon bg-danger">
-                            <i class="fas fa-exclamation-circle mx-0"></i>
-                        </div>
-                        </div>
-                        <div class="preview-item-content">
-                        <h6 class="preview-subject font-weight-medium">Erro de Nota</h6>
-                        <p class="font-weight-light small-text">
-                            Agora
-                        </p>
-                        </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item preview-item">
-                        <div class="preview-thumbnail">
-                        <div class="preview-icon bg-warning">
-                            <i class="fas fa-wrench mx-0"></i>
-                        </div>
-                        </div>
-                        <div class="preview-item-content">
-                        <h6 class="preview-subject font-weight-medium">Definições</h6>
-                        <p class="font-weight-light small-text">
-                            Mesangens privada
-                        </p>
-                        </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item preview-item">
-                        <div class="preview-thumbnail">
-                        <div class="preview-icon bg-info">
-                            <i class="far fa-envelope mx-0"></i>
-                        </div>
-                        </div>
-                        <div class="preview-item-content">
-                        <h6 class="preview-subject font-weight-medium">Novos Usuários registrados</h6>
-                        <p class="font-weight-light small-text">
-                            2 dias  atrás
-                        </p>
-                        </div>
-                    </a>
-                    </div>
-                </li>
-
                 {{-- USER PROFILE --}}
                 <li class="nav-item nav-profile dropdown">
                     <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" id="profileDropdown">
                         <img src="{{ asset('images/faces/face5.jpg') }}" alt="profile"/>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                        <a class="dropdown-item">
+                        <a class="dropdown-item" href="">
                             <i class="fas fa-user-lock text-primary"></i>
                             {{ __('Perfil') }}
                         </a>

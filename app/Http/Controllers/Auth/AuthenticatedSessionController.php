@@ -35,8 +35,14 @@ class AuthenticatedSessionController extends Controller
     {
         $request->authenticate();
         $request->session()->regenerate();
+        $user= Auth::user()->surname;
 
-        return redirect()->intended(route('dashboard', absolute: false));
+        return redirect()
+            ->intended(route('dashboard', absolute: false))
+            ->with('alert',[
+                'bg' => 'info',
+                'msg' => "Seja bem-vindo <b>{$user}</b>!"
+            ]);
     }
 
     /**
@@ -86,7 +92,7 @@ class AuthenticatedSessionController extends Controller
         $about= [
             'title'=> 'Colégio BLA Nº 4013 - Kilamba do Cubal',
             'about'=> 
-                'É uma Instituição pública angolana dedicada ao Ensino básico, da 7ª à 9ª classe. 
+                'É uma Instituição pública angolana dedicada ao Ensino básico, da 7ª, 8 e 9ª classe. 
                 Este portal é uma inovação tecnológica que visa facilitar a Gestão de recursos 
                 humanos e processo de ensino-aprendizagem desta instituição. Nossa meta é 
                 transformar o potencial de cada aluno em excelência académica e humana.',

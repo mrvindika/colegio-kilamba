@@ -3,7 +3,6 @@
     {{-- TITLE --}}
     <x-slot name="title"> {{ __('Definições | Usuários') }} </x-slot>
 
-    {{---------------------------------------BEGIN MAIN CONTENT -----------------------------------------}}
     <div class="col-md-5 grid-margin stretch-card"> 
         <div class="card">
             <div class="card-header">
@@ -23,13 +22,23 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email">{{ __('Usuário') }}</label>
+                        <label for="email">{{ __('Email') }}</label>
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user-lock"></i></span>
+                                <span class="input-group-text"><i class="fas fa-at"></i></span>
                             </div>
-                            <input type="email" id="email" name="email"  class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="Email ou Telemovel" aria-label="Email ou Telemovel">
+                            <input type="email" id="email" name="email"  class="form-control @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="Email" aria-label="Email">
                             @error('email') <span class="invalid-feedback" role="alert">{{ $message }}</span> @enderror
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">{{ __('Telemovel') }}</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                            </div>
+                            <input type="text" id="phone" name="phone"  class="form-control @error('phone') is-invalid @enderror" value="{{ old('phone') }}" placeholder="Telemovel" aria-label="Telemovel">
+                            @error('phone') <span class="invalid-feedback" role="alert">{{ $message }}</span> @enderror
                         </div>
                     </div>
                     <div class="form-group">
@@ -51,16 +60,15 @@
                             <input type="password" id="password_confirmation" class="form-control" name="password_confirmation" placeholder="Palavra-passe" aria-label="Palavra-passe">
                         </div>
                     </div>
+
                     <div class="form-group text-center">
-                        <button type="submit" class="btn btn-primary">
+                        <button type="submit" class="btn btn-success btn-lg btn-rounded">
                             <i class="fas fa-save"></i>
-                            {{ __('Cadastrar') }}
+                            {{ __('Guardar') }}
                         </button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    {{---------------------------------------END MAIN CONTENT -------------------------------------------}}
-
 </x-layouts.app>

@@ -12,6 +12,7 @@ class AttributesCustomizer
   'email'=> 'Email',
   'password'=> 'Senha',
   'role'=> 'Nivel', 
+  'phone'=> 'Telemovel', 
   'current_password'=> 'Senha actual',
   'new_password'=> 'Senha nova',
 ];

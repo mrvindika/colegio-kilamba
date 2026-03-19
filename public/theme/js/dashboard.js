@@ -66,32 +66,16 @@
             }]
           },
           legend: {
-            display: false
+            display: true
           },
           elements: {
             point: {
               radius: 0
             }
           },
-          legendCallback: function(chart) 
-          { 
-            var text = [];
-            text.push('<ul class="legend'+ chart.id +'">');
-            for (var i = 0; i < chart.data.datasets.length; i++) 
-            {
-              text.push('<li><span class="legend-label" style="background-color:' + chart.data.datasets[i].backgroundColor + '"></span>');
-              if (chart.data.datasets[i].label) 
-              {
-                text.push(chart.data.datasets[i].label);
-              }
-              text.push('</li>');
-            }
-            text.push('</ul>');
-            return text.join("");
-          },
+          
         }
       });
-      document.getElementById('grafico-ultimas-matriculas-legend').innerHTML = currentChart.generateLegend();
     }
 
     /* ULTIMOS APROVEITAMENTOS */

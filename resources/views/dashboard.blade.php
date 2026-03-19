@@ -6,7 +6,12 @@
     {{-- HEADER --}}
     <x-slot name="header"> {{ __('Dashboard') }} </x-slot>
 
-    {{---------------------------------------BEGIN MAIN CONTENT -----------------------------------------}}
+    {{-- SCRIPTS --}}
+    <x-slot name="scripts">
+        <script type="text/javascript" src="{{ asset('theme/js/dashboard.js') }}" charset="UTF-8"></script>
+    </x-slot>
+
+    
     {{-- INFO CARDS --}}
     <div class="row grid-margin">
         <div class="col-12">
@@ -110,11 +115,4 @@
             </div>
         </div>
     </div>
-    {{---------------------------------------END MAIN CONTENT -------------------------------------------}}
-
-    {{-- SCRIPTS --}}
-    <x-slot name="scripts">
-        <script type="text/javascript" src="{{ asset('theme/js/dashboard.js') }}" charset="UTF-8"></script>
-    </x-slot>
-
 </x-layouts.app>
