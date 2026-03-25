@@ -19,15 +19,15 @@
                 {{-- USER PROFILE --}}
                 <li class="nav-item nav-profile dropdown">
                     <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" id="profileDropdown">
-                        <img src="{{ asset('images/faces/face5.jpg') }}" alt="profile"/>
+                        <img src="{{ asset('images/avatar.png') }}" alt="Avatar"/>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                        <a class="dropdown-item" href="">
+                        <a wire:navigate class="dropdown-item" href="{{ route('users.show', Auth::user()) }}">
                             <i class="fas fa-user-lock text-primary"></i>
                             {{ __('Perfil') }}
                         </a>
                     <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{{ route('logout') }}"
+                        <a  wire:navigate class="dropdown-item" href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
                             <i class="fas fa-door-closed text-primary"></i>
@@ -49,13 +49,13 @@
                 @if(Route::currentRouteName()=='welcome')
                     @if(App\Models\User::count() == 0)
                         <li class="nav-item btn btn-warning"> 
-                            <a class="nav-link" href="{{ route('register') }}">
+                            <a class="nav-link"  wire:navigate href="{{ route('register') }}">
                                 <i class="fas fa-plus"></i> {{__('Cadastrar')}}
                             </a>
                         </li>
                         @else 
                         <li class="nav-item btn btn-info"> 
-                            <a class="nav-link" href="{{ route('login') }}">
+                            <a class="nav-link"  wire:navigate href="{{ route('login') }}">
                                 <i class="fas fa-door-open"></i> {{ __('Login') }}
                             </a>
                         </li>
@@ -64,7 +64,7 @@
 
                 @if(Route::currentRouteName()=='login')
                      <li class="nav-item btn btn-info"> 
-                        <a class="nav-link" href="{{ route('welcome') }}">
+                        <a class="nav-link"  wire:navigate href="{{ route('welcome') }}">
                             <i class="fas fa-info"></i> {{__('Bem-vindo')}}
                         </a>
                     </li>

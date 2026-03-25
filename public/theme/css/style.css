@@ -10398,11 +10398,11 @@ select.tt-hint:focus::-ms-value {
 }
 
 .col-form-label {
-  padding-top: calc(0.875rem + 1px);
-  padding-bottom: calc(0.875rem + 1px);
-  margin-bottom: 0;
-  font-size: inherit;
-  line-height: 1;
+	padding-top: calc(.6rem + 1px);
+	padding-bottom: calc(.6rem + 1px);
+	margin-bottom: 0;
+	line-height: 1;
+  font-size: .9em;
 }
 
 .col-form-label-lg {
@@ -13665,7 +13665,12 @@ input[type="button"].btn-block {
 }
 
 .card-title {
-  margin-bottom: 0.75rem;
+  margin-bottom: .5rem;
+}
+.profile-picture {
+	border-radius: 50%;
+	border: 5px solid #281c5e;
+	max-height: 6em;
 }
 
 .card-subtitle {
@@ -14178,7 +14183,7 @@ input[type="button"].btn-block {
 
 .alert {
   position: relative;
-  padding: 0.75rem 1.25rem;
+  padding: 0.5rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
   border-radius: 0.25rem;
@@ -17880,7 +17885,7 @@ button.bg-dark:focus,
 }
 
 .font-weight-bold {
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 .font-italic {
@@ -20720,14 +20725,8 @@ code {
 }
 
 .accordion .card .card-body {
-  font-size: 14px;
   padding: 0 2rem 2rem 2rem;
-  font-weight: 400;
   line-height: 1.5;
-}
-
-.accordion .card .card-body i {
-  font-size: 1.25rem;
 }
 
 .accordion.accordion-bordered {
@@ -22470,7 +22469,7 @@ code {
 .card .card-title {
   color: #000000;
   font-weight: normal;
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1.25rem; */
   text-transform: capitalize;
   font-size: 1.125rem;
 }
@@ -24067,7 +24066,7 @@ dl li {
 }
 
 .modal .modal-dialog .modal-content .modal-body {
-  padding: 35px 26px;
+  padding: 1.5em;
 }
 
 .modal .modal-dialog .modal-content .modal-footer {
@@ -25001,19 +25000,42 @@ dl li {
   border-color: rgba(255, 255, 255, 0.2);
 }
 
-.nav-pills {
-  border-bottom: 1px solid #e0e0ef;
-  padding-bottom: 1rem;
+/* .nav-pills {
+   border-bottom: 1px solid #e0e0ef; 
+   padding-bottom: 1rem; 
+} */
+
+.icon-fs-1,
+.icon-fs-2,
+.icon-fs-3,
+.icon-fs-4,
+.icon-fs-5,
+.icon-fs-6,
+.icon-fs-7,
+.icon-fs-8{
+	font-size: 1rem;
+	padding: .5rem;
+	outline: 1px solid antiquewhite;
+	margin: 0 1rem;
+	border-radius: .25rem;
 }
+
+.icon-fs-2{font-size: 2rem;}
+.icon-fs-3{font-size: 3rem;}
+.icon-fs-4{font-size: 4rem;}
+.icon-fs-5{font-size: 5rem;}
+.icon-fs-6{font-size: 6rem;}
+.icon-fs-7{font-size: 7rem;}
+.icon-fs-8{font-size: 8rem;}
 
 .nav-pills .nav-link {
   border: 1px solid #e0e0ef;
-  padding: .5rem 1.75rem;
+  padding: .5rem;
 }
 
 @media (max-width: 767px) {
   .nav-pills .nav-link {
-    padding: .5rem .5rem;
+    padding: .5rem;
   }
 }
 
@@ -25118,9 +25140,9 @@ dl li {
 }
 
 .tab-content {
-  border: 1px solid #e0e0ef;
+  /* border: 1px solid #e0e0ef; */
   border-top: 0;
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
   text-align: justify;
 }
 

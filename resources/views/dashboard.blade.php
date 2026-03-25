@@ -3,9 +3,6 @@
     {{-- TITLE --}}
     <x-slot name="title"> {{ __('Dashboard') }} </x-slot>
 
-    {{-- HEADER --}}
-    <x-slot name="header"> {{ __('Dashboard') }} </x-slot>
-
     {{-- SCRIPTS --}}
     <x-slot name="scripts">
         <script type="text/javascript" src="{{ asset('theme/js/dashboard.js') }}" charset="UTF-8"></script>

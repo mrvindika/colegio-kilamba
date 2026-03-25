@@ -10,11 +10,11 @@ class AttributesCustomizer
   // User
   'name'=> 'Nome',
   'email'=> 'Email',
-  'password'=> 'Senha',
-  'role'=> 'Nivel', 
+  'password'=> 'Palavra-passe',
+  'role'=> 'Previlégio', 
   'phone'=> 'Telemovel', 
-  'current_password'=> 'Senha actual',
-  'new_password'=> 'Senha nova',
+  'current_password'=> 'Palavra-passe actual',
+  'new_password'=> 'Nova palavra-passe',
 ];
 
 

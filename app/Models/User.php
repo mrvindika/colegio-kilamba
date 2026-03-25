@@ -33,6 +33,7 @@ class User extends Authenticatable
     protected $appends = [
         'firstname',
         'surname', 
+        'fullname', 
         'online', 
         'last_session',
     ];
@@ -88,6 +89,15 @@ class User extends Authenticatable
     public function getFirstnameAttribute(){
 
         return Append::firstName($this->name);
+    }
+
+    /**
+    * Get Fullname
+    * @return string
+    */
+    public function getFullnameAttribute(){
+
+        return Append::fullName($this->name);
     }
 
     /**

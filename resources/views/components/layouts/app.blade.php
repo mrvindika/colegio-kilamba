@@ -22,6 +22,9 @@
         {{-- GENERIC STYLES --}}
         <link rel="stylesheet" type="text/css" href="{{ asset('theme/css/vendor.bundle.base.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('theme/css/vendor.bundle.addons.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('theme/iconfonts/simple-line-icon/css/simple-line-icons.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('theme/iconfonts/flag-icon-css/css/flag-icon.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('theme/iconfonts/ti-icons/css/themify-icons.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('theme/iconfonts/font-awesome/css/all.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('theme/css/style.css') }}">
         
@@ -46,16 +49,18 @@
                         <div class="content-wrapper">
                             <div class="page-header">
                                 <h3 class="page-title"> 
-                                    {{ $header?? null }}
+                                    {{ $title?? 'Testing Page'}}
                                 </h3>
                                 
                                 {{-- NOTIFICATION ALERT --}}
-                                @if(session('alert'))
-                                    <div class="alert alert-fill-{{ session('alert.bg') }}" role="alert">
-                                        <i class="fa fa-bell"></i>
-                                        {!! session('alert.msg') !!}
-                                    </div>
-                                @endif
+                                <nav aria-label="breadcrumb">
+                                    @if (session('alert'))
+                                        <div class="alert alert-fill-{{ session('alert.bg')}}" role="alert">
+                                            <i class="fa fa-bell"></i>
+                                            {!! session('alert.msg') !!}
+                                        </div>
+                                    @endif
+                                </nav>
                             </div>
                             {{ $slot }}
                         </div>

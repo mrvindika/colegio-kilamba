@@ -26,13 +26,13 @@ Route::middleware(['auth', 'verified'])->group(function () {
     });
 
     /*---------------------------------------------------------------------------------
-    |    SETTINGS
+    |    user
     |---------------------------------------------------------------------------------*/
+
     Route::group(['prefix'=> 'settings'], function(){
         // USER
-        Volt::route('users', 'settings.user-index')->name('user.index'); 
-        Volt::route('users/create', 'settings.user-create')->name('user.create'); 
-        Volt::route('users/{user}', 'settings.user-show')->name('user.show'); 
+        Volt::route('users', 'user.index')->name('users.index'); 
+        Volt::route('users/{user}', 'user.show')->name('users.show'); 
     });
 
 });

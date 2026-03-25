@@ -3,16 +3,16 @@
           <li class="nav-item nav-profile">
             <div class="nav-link">
               <div class="profile-image">
-                <img src="{{ asset('images/faces/face5.jpg') }}" alt="image"/>
+                <img src="{{ asset('images/avatar.png') }}" alt="avatar"/>
               </div>
               <div class="profile-name">
-                <p class="name">{{__('Asenath Vindica')}}</p>
-                <p class="designation">{{__('Administrador')}}</p>
+                <p class="name">{{Auth::User()->surname}}</p>
+                <p class="designation">{{Auth::User()->role}} <i class="fa fa-circle"></i></p>
               </div>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index-2.html">
+            <a class="nav-link" wire:navigate href="{{ route('dashboard') }}">
               <i class="fa fa-home menu-icon"></i>
               <span class="menu-title">{{__('Dashboard')}}</span>
             </a>
@@ -27,8 +27,8 @@
             </a>
             <div class="collapse" id="page-system">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="">{{__('Instituição')}}</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">{{__('Bem-vindo')}}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{__('Instituição')}}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{__('Bem-vindo')}}</a></li>
               </ul>
             </div>
           </li>
@@ -42,10 +42,10 @@
             </a>
             <div class="collapse" id="page-security">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Editar Perfil') }}</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Mudar Senha') }}</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Adicionar Usuário') }}</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Todos Usuários') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{ __('Editar Perfil') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{ __('Mudar Senha') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{ __('Adicionar Usuário') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="{{ route('users.index') }}">{{ __('Todos Usuários') }}</a></li>
               </ul>
             </div>
           </li>
@@ -59,11 +59,11 @@
             </a>
             <div class="collapse" id="page-employee">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Novo') }}</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Docentes') }}</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Administrativos') }}</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Força de Trabalho') }}</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Todos') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{ __('Novo') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{ __('Docentes') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{ __('Administrativos') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{ __('Força de Trabalho') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{ __('Todos') }}</a></li>
               </ul>
               </div>
           </li>
@@ -77,11 +77,11 @@
             </a>
             <div class="collapse" id="page-student">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="">{{ __('Novo') }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="">{{ __('Actuais') }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="">{{ __('Antigos') }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="">{{ __('Finalistas') }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="">{{ __('Todos') }}</a></li>
+                <li class="nav-item"><a class="nav-link" wire:navigate href="">{{ __('Novo') }}</a></li>
+                <li class="nav-item"><a class="nav-link" wire:navigate href="">{{ __('Actuais') }}</a></li>
+                <li class="nav-item"><a class="nav-link" wire:navigate href="">{{ __('Antigos') }}</a></li>
+                <li class="nav-item"><a class="nav-link" wire:navigate href="">{{ __('Finalistas') }}</a></li>
+                <li class="nav-item"><a class="nav-link" wire:navigate href="">{{ __('Todos') }}</a></li>
               </ul>
             </div>
           </li>
@@ -95,10 +95,10 @@
             </a>
             <div class="collapse" id="page-class">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="">{{ __('Actuais') }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="">{{ __('EJA') }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="">{{ __('Regular') }}</a></li>
-                <li class="nav-item"><a class="nav-link" href="">{{ __('Todas') }}</a></li>
+                <li class="nav-item"><a class="nav-link" wire:navigate href="">{{ __('Actuais') }}</a></li>
+                <li class="nav-item"><a class="nav-link" wire:navigate href="">{{ __('EJA') }}</a></li>
+                <li class="nav-item"><a class="nav-link" wire:navigate href="">{{ __('Regular') }}</a></li>
+                <li class="nav-item"><a class="nav-link" wire:navigate href="">{{ __('Todas') }}</a></li>
               </ul>
             </div>
           </li>
@@ -112,16 +112,16 @@
             </a>
             <div class="collapse" id="page-academic-year">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Novo') }}</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Actual') }}</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Anterior') }}</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">{{ __('Todos') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{ __('Novo') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{ __('Actual') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{ __('Anterior') }}</a></li>
+                <li class="nav-item"> <a class="nav-link" wire:navigate href="">{{ __('Todos') }}</a></li>
               </ul>
               </div>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" wire:navigate href="">
               <i class="far fa-file-alt menu-icon"></i>
               <span class="menu-title">{{__('Ajuda')}}</span>
             </a>
